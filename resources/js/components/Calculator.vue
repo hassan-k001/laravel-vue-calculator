@@ -16,7 +16,6 @@
                 <button type="submit" :disabled="isLoading" @click="submit" class="btn btn-primary btn-block btn-danger"> Sum</button>
             </div>
         </div>
-            
         <hr/>
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -27,11 +26,9 @@
         </div>
     </div>
 </template>
-
 <script>
     import {Form} from "../Form";
     export default {
-
         data() {
             return {
                 form: new Form({

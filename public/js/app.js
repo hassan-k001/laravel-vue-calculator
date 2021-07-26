@@ -1893,6 +1893,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -39070,109 +39074,113 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "card" }, [
-    _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c(
-          "div",
-          { staticClass: "col-md-8" },
-          [
-            _vm.isLoading ? _c("loading") : _vm._e(),
-            _vm._v(" "),
-            _c("h5", { staticClass: "card-title text-center" }, [
-              _vm._v("Enter the number")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group" }, [
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.number_1,
-                    expression: "form.number_1"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Number 1" },
-                domProps: { value: _vm.form.number_1 },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.form, "number_1", $event.target.value)
-                  }
-                }
-              }),
-              _vm._v(" "),
-              this.form.errors.has("number_1")
-                ? _c("small", {
-                    staticClass: "form-text text-danger",
-                    domProps: {
-                      textContent: _vm._s(_vm.form.errors.get("number_1"))
-                    }
-                  })
-                : _vm._e()
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group" }, [
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.number_2,
-                    expression: "form.number_2"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Number 2" },
-                domProps: { value: _vm.form.number_2 },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.form, "number_2", $event.target.value)
-                  }
-                }
-              }),
-              _vm._v(" "),
-              this.form.errors.has("number_2")
-                ? _c("small", {
-                    staticClass: "form-text text-danger",
-                    domProps: {
-                      textContent: _vm._s(_vm.form.errors.get("number_2"))
-                    }
-                  })
-                : _vm._e()
-            ]),
-            _vm._v(" "),
+  return _c("div", { staticClass: "row justify-content-center" }, [
+    _c("div", { staticClass: "col-md-8" }, [
+      _c("div", { staticClass: "card" }, [
+        _c("div", { staticClass: "card-body" }, [
+          _c("div", { staticClass: "row justify-content-center" }, [
             _c(
-              "button",
-              {
-                staticClass: "btn btn-primary btn-block btn-danger",
-                attrs: { type: "submit", disabled: _vm.isLoading },
-                on: { click: _vm.submit }
-              },
-              [_vm._v(" Sum")]
+              "div",
+              { staticClass: "col-md-8" },
+              [
+                _vm.isLoading ? _c("loading") : _vm._e(),
+                _vm._v(" "),
+                _c("h5", { staticClass: "card-title text-center" }, [
+                  _vm._v("Enter the number")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.number_1,
+                        expression: "form.number_1"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { type: "text", placeholder: "Number 1" },
+                    domProps: { value: _vm.form.number_1 },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.form, "number_1", $event.target.value)
+                      }
+                    }
+                  }),
+                  _vm._v(" "),
+                  this.form.errors.has("number_1")
+                    ? _c("small", {
+                        staticClass: "form-text text-danger",
+                        domProps: {
+                          textContent: _vm._s(_vm.form.errors.get("number_1"))
+                        }
+                      })
+                    : _vm._e()
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.number_2,
+                        expression: "form.number_2"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { type: "text", placeholder: "Number 2" },
+                    domProps: { value: _vm.form.number_2 },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.form, "number_2", $event.target.value)
+                      }
+                    }
+                  }),
+                  _vm._v(" "),
+                  this.form.errors.has("number_2")
+                    ? _c("small", {
+                        staticClass: "form-text text-danger",
+                        domProps: {
+                          textContent: _vm._s(_vm.form.errors.get("number_2"))
+                        }
+                      })
+                    : _vm._e()
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-primary btn-block btn-danger",
+                    attrs: { type: "submit", disabled: _vm.isLoading },
+                    on: { click: _vm.submit }
+                  },
+                  [_vm._v(" Sum")]
+                )
+              ],
+              1
             )
-          ],
-          1
-        )
-      ]),
-      _vm._v(" "),
-      _c("hr"),
-      _vm._v(" "),
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("h5", { staticClass: "card-title text-center" }, [
-            _vm._v("Results")
           ]),
           _vm._v(" "),
-          _c("p", { staticClass: "form-control text-center" }, [
-            _vm._v(_vm._s(_vm.result))
+          _c("div", { staticClass: "row justify-content-center" }, [
+            _c("div", { staticClass: "col-md-8 " }, [
+              _c("p", { staticClass: "b-t" }),
+              _vm._v(" "),
+              _c("h5", { staticClass: "card-title text-center" }, [
+                _vm._v("Results")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "form-control text-center" }, [
+                _vm._v(_vm._s(_vm.result))
+              ])
+            ])
           ])
         ])
       ])

@@ -1,27 +1,31 @@
 <template>
-    <div class="card">
-        <div class="card-body">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <loading v-if="isLoading"></loading>
-                <h5 class="card-title text-center">Enter the number</h5>
-                <div class="form-group">
-                    <input type="text" class="form-control"  placeholder="Number 1" v-model="form.number_1">
-                    <small v-if="this.form.errors.has('number_1')" v-text="form.errors.get('number_1')" class="form-text text-danger"></small>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <loading v-if="isLoading"></loading>
+                            <h5 class="card-title text-center">Enter the number</h5>
+                            <div class="form-group">
+                                <input type="text" class="form-control"  placeholder="Number 1" v-model="form.number_1">
+                                <small v-if="this.form.errors.has('number_1')" v-text="form.errors.get('number_1')" class="form-text text-danger"></small>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control"  placeholder="Number 2" v-model="form.number_2">
+                                <small v-if="this.form.errors.has('number_2')" v-text="form.errors.get('number_2')" class="form-text text-danger"></small>
+                            </div>
+                            <button type="submit" :disabled="isLoading" @click="submit" class="btn btn-primary btn-block btn-danger"> Sum</button>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 ">
+                            <p class="b-t"></p>
+                            <h5 class="card-title text-center">Results</h5>
+                            <p class="form-control text-center">{{result}}</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control"  placeholder="Number 2" v-model="form.number_2">
-                    <small v-if="this.form.errors.has('number_2')" v-text="form.errors.get('number_2')" class="form-text text-danger"></small>
-                </div>
-                <button type="submit" :disabled="isLoading" @click="submit" class="btn btn-primary btn-block btn-danger"> Sum</button>
-            </div>
-        </div>
-        <hr/>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <h5 class="card-title text-center">Results</h5>
-                <p class="form-control text-center">{{result}}</p>
-            </div>
             </div>
         </div>
     </div>

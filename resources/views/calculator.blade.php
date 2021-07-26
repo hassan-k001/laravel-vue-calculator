@@ -13,8 +13,8 @@
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="title-text text-center">
-        Calculator
+    <div class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25">
+        CALCULATOR
     </div>
   </div>
 </nav>

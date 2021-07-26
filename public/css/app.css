@@ -16131,12 +16131,8 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-.title-text {
-  height: 50px;
-  padding: 15px 15px;
-  font-size: 18px;
-  color: white;
-  line-height: 1;
+.navbar-brand {
+  color: white !important;
 }
 
 .navbar-default {
@@ -16149,4 +16145,15 @@ readers do not read off random characters that represent icons */
 
 .card {
   margin-top: 30px;
+}
+
+.b-t {
+  border-top: 1px solid red;
+  margin-top: 30px;
+}
+
+.btn-danger:hover {
+  border-color: red;
+  background-color: white;
+  color: red;
 }
